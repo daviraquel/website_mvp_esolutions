@@ -17,7 +17,7 @@ export const TechCardStyled = styled.div`
     object-fit: contain;
     margin-bottom: 20px;
   }
-  a {
+  .techCardLink {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,7 +36,7 @@ export const TechCardStyled = styled.div`
     display: inline-block;
   }
 
-  a:hover {
+  .techCardLink:hover {
     color: ${(props) => props.theme.colors.red};
     background-color: ${(props) => props.theme.colors.black};
   }

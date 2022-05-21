@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Header = styled.header`
   position: ${(props) => (props.scrolled ? "fixed" : "absolute")};
@@ -22,7 +23,7 @@ export const HeaderContainer = styled.div`
   align-items: center;
 `;
 
-export const StyledHeaderLink = styled.a`
+export const StyledHeaderLink = styled(Link)`
   font-size: ${(props) => props.theme.fontSize.small};
   padding: 15px;
   text-decoration: none;

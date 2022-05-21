@@ -16,8 +16,6 @@ import vcuImg from "../assets/img/products/vcu.png";
 import acate1 from "../assets/img/acate/acate1.png";
 import acate2 from "../assets/img/acate/acate2.png";
 
-import motor from "../assets/img/techs/motor.png";
-import inverter from "../assets/img/techs/inverter.png";
 import vcu from "../assets/img/techs/vcu.png";
 
 export const dropdownLinks = [
@@ -33,8 +31,8 @@ export const dropdownLinks = [
   },
   {
     text: "tecnologia",
-    link: "/techs",
-    more: true,
+    link: "#techs",
+    more: false, //mudar para true para habilitar projetos
   },
   {
     text: "contato",
@@ -45,86 +43,85 @@ export const dropdownLinks = [
 
 export const techLinks = [
   {
-    text: "máquina de fluxo axial",
-    link: "/motor",
+    text: "Máquina de Fluxo Axial",
+    link: "/construction",
   },
   {
-    text: "inversor de frequência",
-    link: "/inverter",
-  },
-  {
-    text: "vcu",
-    link: "/vcu",
+    text: "Inversor de Frequência",
+    link: "/construction",
   },
 ];
 
 export const aboutText =
-  "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of";
+  "Desenvolvemos projetos e produtos para veículos elétricos e híbridos, atendendo desde a linha leve até a pesada. Nosso foco é o desenvolvimento do sistema de tração e acionamento, entregando soluções otimizadas e inteligentes aos nossos parceiros.​";
 
-export const servicesTitle = "See what we can do for your projects";
+export const servicesTitle = "Como podemos ajudar no seu projeto";
 
 export const servicesCards = [
-  { img: { batteryImg }, text: "Motor fodão" },
-  { img: { carImg }, text: "Graphics Design" },
-  { img: { codingImg }, text: "SEO & Marketing" },
-  { img: { computerImg }, text: "Customer Services" },
-  { img: { electronicsImg }, text: " App Development" },
-  { img: { motorImg }, text: "UI/UX Design" },
+  { img: { batteryImg }, text: "Sistemas de armazenamento de energia" },
+  { img: { carImg }, text: "Integração de sistemas automotivos" },
+  { img: { codingImg }, text: "Algoritmos de controle" },
+  { img: { computerImg }, text: "Simulação computacional" },
+  { img: { electronicsImg }, text: "Unidade de controle veícular" },
+  { img: { motorImg }, text: "Motores elétricos" },
 ];
 
 export const teamText =
-  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.";
+  "Com mais de 7 anos de experiência no desenvolvimento de veículos elétricos, somos especializados em eletrônica de potência e máquinas elétricas.";
 
 export const teamInfo = [
   {
     img: { andreImg },
     url: "https://www.linkedin.com/in/andrevenzon/",
     name: "André Venzon",
-    position: "CTO",
+    position: "CTO & Co-founder",
   },
   {
     img: { thiagoImg },
     url: "https://www.linkedin.com/in/thiagotmotta/",
     name: "Thiago Motta",
-    position: "CEO",
+    position: "CEO & Co-founder",
   },
   {
     img: { gustavoImg },
     url: "https://www.linkedin.com/in/-gustavo-pereira-/",
     name: "Gustavo Pereira",
-    position: "CPO",
+    position: "CPO & Co-founder",
   },
 ];
 
 export const techsText =
-  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga quas itaque eveniet beatae optio.";
+  "Dimensionamos, projetamos e produzimos sistemas de tração de alta tecnologia. Oferecemos soluções personalizados de acordo com a sua necessidade.";
 
 export const techsInfo = [
   {
     name: "Máquinas de Fluxo Axial",
-    description: "Alta densidade de potência",
+    description:
+      "Design eletromagnético mais eficiente, resultando no menor uso de material por kW de potência. Configuração de ímãs permanentes de rotor duplo, maior relação torque-peso. Facilidade de manufatura e redução de custos.",
     img: { axialImg },
     url: "/motor",
   },
   {
     name: "Inversores de Frequência",
-    description: "não tenho mais criatividade",
+    description:
+      "Redução ativa das perdas de comutação, com modulação otimizada. Carcaça com trocador de calor integrado e arrefecimento com fluido refrigerante (WEG), o que garante dimensões compactas. ASIL-D capable, de acordo com normativa ISO 26262.",
     img: { inverterImg },
     url: "/inverter",
   },
-  {
-    name: "Unidade de Controle Veicular",
-    description: "Robustez e confiabilidade",
-    img: { vcuImg },
-    url: "/vcu",
-  },
+  // {
+  //   name: "Unidade de Controle Veicular",
+  //   description: "Compacta, robusta e eficiente, proteção contra água e poeira (IP69K), Protocolo de comunicação padrão automotivo (CAN), isolação galvânica de mais de 1500 V, Processador ARM ASIL-D capable, de acordo com normativa ISO 26262.",
+  //   img: { vcuImg },
+  //   url: "/vcu",
+  // },
 ];
 
 export const footerAboutText =
-  "Desenvolvimento de sistema de tração e acionamento para veículos elétricos e híbridos, entregando soluções otimizadas e intelegentes aos nossos parceiros";
+  "Desenvolvimento de sistema de tração e acionamento para veículos elétricos e híbridos, entregando soluções otimizadas e inteligentes aos nossos parceiros";
 
 export const footerAdress = {
-  street: "Rua Cristóvão Nunes Píres,nº 110, sala 903",
+  street: "Rua Cristóvão Nunes Píres, nº 110",
+  room: "Ed. Hoepck Blue Center - sala 903",
   postalCode: "88010-120",
   city: "Florianópolis-SC",
   phone: "+55 48 3054-2065",
@@ -142,7 +139,7 @@ export const footerLinks = [
   },
   {
     text: "Tecnologia",
-    link: "/techs",
+    link: "/construction",
   },
   {
     text: "Contato",
@@ -188,7 +185,7 @@ export const titles = {
 
 export const techContent = {
   motor: {
-    img: motor,
+    img: vcu,
     alt: "vista explodida motor de fluxo axial",
     title: "Motor de Fluxo",
     spanText: "Axial",
@@ -197,7 +194,7 @@ export const techContent = {
     link: "/motor",
   },
   inverter: {
-    img: inverter,
+    img: vcu,
     alt: "vista explodida inversor de frequência",
     title: "Inversor de",
     spanText: "Frequência",
@@ -223,21 +220,21 @@ export const productPages = [
     spanText: "alta eficiência",
     mainText:
       "Etiam vulputate ut augue vel sodales. In sollicitudin neque et massa porttitor vestibulum ac vel nisi. Vestibulum placerat eget dolor sit amet posuere. In ut dolor aliquet, aliquet sapien sed, interdum velit. Nam eu molestie lorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis illo repellat veritatis minus, et labore minima mollitia qui ducimus.",
-    mainImg: motor,
+    mainImg: vcu,
     mainAlt: "vista explodida motor de fluxo axial",
     imgList: [
       {
-        img: motor,
+        img: vcu,
         alt: "vista explodida motor de fluxo axial",
         title: "Vista explodida",
       },
       {
-        img: motor,
+        img: vcu,
         alt: "vista explodida motor de fluxo axial",
         title: "Vista explodida",
       },
       {
-        img: motor,
+        img: vcu,
         alt: "vista explodida motor de fluxo axial",
         title: "Vista explodida",
       },
@@ -249,21 +246,21 @@ export const productPages = [
     spanText: "alta eficiência",
     mainText:
       "Etiam vulputate ut augue vel sodales. In sollicitudin neque et massa porttitor vestibulum ac vel nisi. Vestibulum placerat eget dolor sit amet posuere. In ut dolor aliquet, aliquet sapien sed, interdum velit. Nam eu molestie lorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis illo repellat veritatis minus, et labore minima mollitia qui ducimus.",
-    mainImg: inverter,
+    mainImg: vcu,
     mainAlt: "vista explodida inversor",
     imgList: [
       {
-        img: inverter,
+        img: vcu,
         alt: "vista explodida inversor",
         title: "Vista explodida",
       },
       {
-        img: inverter,
+        img: vcu,
         alt: "vista explodida inversor",
         title: "Vista explodida",
       },
       {
-        img: inverter,
+        img: vcu,
         alt: "vista explodida inversor",
         title: "Vista explodida",
       },

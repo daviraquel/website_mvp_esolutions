@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Router, Routes, Route } from "react-router-dom";
 import { Contact } from "../pages/contact/Contact";
 import { Home } from "../pages/home/Home";
 import { Construction } from "../pages/construction/Construction";
@@ -9,7 +9,7 @@ import { productPages } from "../utils/utils";
 
 export const RoutesComponent = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
@@ -23,6 +23,6 @@ export const RoutesComponent = () => {
           />
         ))}
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 };

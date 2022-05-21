@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { HeaderLink } from "../HeaderLink/HeaderLink";
 import { HeaderLinkGroup } from "./DesktopHeader.styled";
@@ -33,7 +34,9 @@ export const DesktopHeader = () => {
             <ul className="dropdown-content">
               {techLinks.map((item, index) => (
                 <li key={index}>
-                  <a href={item.link}>{item.text}</a>
+                  <Link className="dropdownLink" to={item.link}>
+                    {item.text}
+                  </Link>
                 </li>
               ))}
             </ul>

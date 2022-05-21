@@ -31,7 +31,7 @@ export const HeaderLinkGroup = styled.div`
     width: 220px;
   }
 
-  li a {
+  li .dropdownLink {
     transition: color 0.3s;
     color: black;
     font-size: ${(props) => props.theme.fontSize.small};
@@ -41,7 +41,7 @@ export const HeaderLinkGroup = styled.div`
     padding: 8px;
   }
 
-  li a:hover {
+  li .dropdownLink:hover {
     color: red;
   }
 `;
