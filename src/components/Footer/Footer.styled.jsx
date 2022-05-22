@@ -114,9 +114,7 @@ export const Copyrights = styled.div`
   a {
     font-size: 16px;
     padding: 16px 10px;
-    opacity: 0.7;
     box-sizing: border-box;
-    font-weight: bold;
   }
   @media (min-width: 992px) {
     div {

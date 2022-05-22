@@ -1,4 +1,5 @@
 import { FaPlus } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 import { TechsMenu } from "./TechsMenu";
 import { StyledMenu, DropDownLink, TechsButton } from "./MobileHeader.styled";
@@ -15,7 +16,7 @@ export const DropdownMenu = ({ menuOpen, openTechs, setOpenTechs }) => {
       <ul>
         {dropdownLinks.map((item, index) => (
           <DropDownLink key={index}>
-            <a href={item.link}>{item.text}</a>
+            <Link to={item.link}>{item.text}</Link>
             {item.more ? (
               <TechsButton openTechs={openTechs} onClick={() => handletechs()}>
                 <FaPlus />

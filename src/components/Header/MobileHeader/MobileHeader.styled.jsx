@@ -28,13 +28,19 @@ export const DropDownLink = styled.li`
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   position: relative;
 
-  a {
+  a,
+  button {
     font-size: ${(props) => props.theme.fontSize.small};
     color: ${(props) => props.theme.colors.black};
     display: block;
     text-decoration: none;
     text-transform: uppercase;
     padding: 0.5em 5%;
+  }
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
   }
   div {
     position: absolute;

@@ -11,6 +11,11 @@ export const MainTitleContainer = styled.section`
     object-fit: cover;
     z-index: -1;
   }
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
   svg {
     position: absolute;
     width: 46px;

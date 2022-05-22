@@ -16,8 +16,6 @@ import vcuImg from "../assets/img/products/vcu.png";
 import acate1 from "../assets/img/acate/acate1.png";
 import acate2 from "../assets/img/acate/acate2.png";
 
-import vcu from "../assets/img/techs/vcu.png";
-
 export const dropdownLinks = [
   {
     text: "home",
@@ -31,7 +29,7 @@ export const dropdownLinks = [
   },
   {
     text: "tecnologia",
-    link: "#techs",
+    link: "/techs",
     more: false, //mudar para true para habilitar projetos
   },
   {
@@ -44,11 +42,15 @@ export const dropdownLinks = [
 export const techLinks = [
   {
     text: "Máquina de Fluxo Axial",
-    link: "/construction",
+    link: "/motor",
   },
   {
     text: "Inversor de Frequência",
-    link: "/construction",
+    link: "/inverter",
+  },
+  {
+    text: "VCU",
+    link: "/vcu",
   },
 ];
 
@@ -108,12 +110,13 @@ export const techsInfo = [
     img: { inverterImg },
     url: "/inverter",
   },
-  // {
-  //   name: "Unidade de Controle Veicular",
-  //   description: "Compacta, robusta e eficiente, proteção contra água e poeira (IP69K), Protocolo de comunicação padrão automotivo (CAN), isolação galvânica de mais de 1500 V, Processador ARM ASIL-D capable, de acordo com normativa ISO 26262.",
-  //   img: { vcuImg },
-  //   url: "/vcu",
-  // },
+  {
+    name: "Unidade de Controle Veicular",
+    description:
+      "Compacta, robusta e eficiente, proteção contra água e poeira (IP69K), Protocolo de comunicação padrão automotivo (CAN), isolação galvânica de mais de 1500 V, Processador ARM ASIL-D capable, de acordo com normativa ISO 26262.",
+    img: { vcuImg },
+    url: "/vcu",
+  },
 ];
 
 export const footerAboutText =
@@ -185,8 +188,8 @@ export const titles = {
 
 export const techContent = {
   motor: {
-    img: vcu,
-    alt: "vista explodida motor de fluxo axial",
+    img: axialImg,
+    alt: "motor de fluxo axial",
     title: "Motor de Fluxo",
     spanText: "Axial",
     contentText:
@@ -194,7 +197,7 @@ export const techContent = {
     link: "/motor",
   },
   inverter: {
-    img: vcu,
+    img: inverterImg,
     alt: "vista explodida inversor de frequência",
     title: "Inversor de",
     spanText: "Frequência",
@@ -203,7 +206,7 @@ export const techContent = {
     link: "/inverter",
   },
   vcu: {
-    img: vcu,
+    img: vcuImg,
     alt: "imagem placa eletrônica da unidade de controle veicular",
     title: "Unidade de Controle",
     spanText: "Veicular",
@@ -220,23 +223,23 @@ export const productPages = [
     spanText: "alta eficiência",
     mainText:
       "Etiam vulputate ut augue vel sodales. In sollicitudin neque et massa porttitor vestibulum ac vel nisi. Vestibulum placerat eget dolor sit amet posuere. In ut dolor aliquet, aliquet sapien sed, interdum velit. Nam eu molestie lorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis illo repellat veritatis minus, et labore minima mollitia qui ducimus.",
-    mainImg: vcu,
+    mainImg: axialImg,
     mainAlt: "vista explodida motor de fluxo axial",
     imgList: [
       {
-        img: vcu,
-        alt: "vista explodida motor de fluxo axial",
-        title: "Vista explodida",
+        img: axialImg,
+        alt: "motor de fluxo axial",
+        title: "Motor de Fluxo Axial",
       },
       {
-        img: vcu,
-        alt: "vista explodida motor de fluxo axial",
-        title: "Vista explodida",
+        img: axialImg,
+        alt: "motor de fluxo axial",
+        title: "Motor de Fluxo Axial",
       },
       {
-        img: vcu,
-        alt: "vista explodida motor de fluxo axial",
-        title: "Vista explodida",
+        img: axialImg,
+        alt: "motor de fluxo axial",
+        title: "Motor de Fluxo Axial",
       },
     ],
   },
@@ -246,23 +249,23 @@ export const productPages = [
     spanText: "alta eficiência",
     mainText:
       "Etiam vulputate ut augue vel sodales. In sollicitudin neque et massa porttitor vestibulum ac vel nisi. Vestibulum placerat eget dolor sit amet posuere. In ut dolor aliquet, aliquet sapien sed, interdum velit. Nam eu molestie lorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis illo repellat veritatis minus, et labore minima mollitia qui ducimus.",
-    mainImg: vcu,
-    mainAlt: "vista explodida inversor",
+    mainImg: inverterImg,
+    mainAlt: "inversor de frequência",
     imgList: [
       {
-        img: vcu,
-        alt: "vista explodida inversor",
-        title: "Vista explodida",
+        img: inverterImg,
+        alt: "inversor de frequência",
+        title: "Inversor de frequência",
       },
       {
-        img: vcu,
-        alt: "vista explodida inversor",
-        title: "Vista explodida",
+        img: inverterImg,
+        alt: "inversor de frequência",
+        title: "Inversor de frequência",
       },
       {
-        img: vcu,
-        alt: "vista explodida inversor",
-        title: "Vista explodida",
+        img: inverterImg,
+        alt: "inversor de frequência",
+        title: "Inversor de frequência",
       },
     ],
   },
@@ -272,23 +275,23 @@ export const productPages = [
     spanText: "alta eficiência",
     mainText:
       "Etiam vulputate ut augue vel sodales. In sollicitudin neque et massa porttitor vestibulum ac vel nisi. Vestibulum placerat eget dolor sit amet posuere. In ut dolor aliquet, aliquet sapien sed, interdum velit. Nam eu molestie lorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente facilis illo repellat veritatis minus, et labore minima mollitia qui ducimus.",
-    mainImg: vcu,
+    mainImg: vcuImg,
     mainAlt: "imagem placa eletrônica da unidade de controle veicular",
     imgList: [
       {
-        img: vcu,
+        img: vcuImg,
         alt: "imagem placa eletrônica da unidade de controle veicular",
-        title: "Vista explodida",
+        title: "Unidade de Controle Veicular",
       },
       {
-        img: vcu,
+        img: vcuImg,
         alt: "imagem placa eletrônica da unidade de controle veicular",
-        title: "Vista explodida",
+        title: "Unidade de Controle Veicular",
       },
       {
-        img: vcu,
+        img: vcuImg,
         alt: "imagem placa eletrônica da unidade de controle veicular",
-        title: "Vista explodida",
+        title: "Unidade de Controle Veicular",
       },
     ],
   },

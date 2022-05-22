@@ -58,7 +58,16 @@ export const Footer = () => {
       </FlexFooter>
       <Copyrights>
         <div>
-          <p>Copyrights © 2022 - MVP e-solutions, All Rights Reserved.</p>
+          <p>
+            Copyrights © 2022 - MVP e-solutions, All Rights Reserved.
+            <a
+              href="https://www.linkedin.com/in/daviraquel/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Desenvolvido por Davi Raquel
+            </a>
+          </p>
           <ul>
             <li>
               <a
