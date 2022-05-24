@@ -14,6 +14,7 @@ export const LandingTitle = () => {
       <img src={background} alt="electric car and bike" />
       <h1>Acelerando a eletrificação de veículos no Brasil</h1>
       <Link
+        to="#about"
         id="arrowLink"
         onClick={() => {
           handleClick();
